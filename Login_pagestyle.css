@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #333;
+}
+.maindiv{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+.leftcontent{
+    flex: 1;
+    background: url(loginimg.png) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 40px;
+   margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 640px;
+
+    position: relative;
+    left: 100px;
+    width: 450px;
+    
+}
+.leftcontent .content{
+    text-align: center;
+    max-width: 400px;
+
+}
+.leftcontent h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.leftcontent h1 .heading{
+    color: #00c853;
+}
+.leftcontent h2{
+    margin-bottom: 20px;
+}
+.leftcontent p{
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.icons a {
+    margin: 0 5px;
+    font-size: 20px;
+    color: white;
+    background-color: #ddd;
+    padding: 8px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.icons a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.rightcontent{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding: 100px;
+    
+
+}
+.login{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.login label{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.login input[type="email"], .login input[type="password"]{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.checkbox{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.checkbox a{
+    text-decoration: none;
+    color: #079cec;
+
+}
+button{
+    background-color: #00c853;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reglink{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+
+}
+.reglink a{
+    text-decoration: none;
+    color: #079cec;
+}
+
+@media screen and (max-width: 768px) {
+    .maindiv {
+        flex-direction: column;
+    }
+    .leftcontent, .rightcontent , .leftdiv {
+        margin: 20px;
+        padding: 20px;
+    }
+   
+    .leftcontent , .leftdiv{
+        
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: auto;
+    }
+    
+}
+
+
+
